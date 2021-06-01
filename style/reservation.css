@@ -1,0 +1,211 @@
+*{  /*把所有元素 margin padding 都先變成0 之後就不用再寫了*/
+	margin: 0;
+	padding: 0; 
+	font-family: "微軟正黑體";
+}
+header{
+	position: fixed; /*選單定在上面*/
+	height: 75px;
+	width: 100%;
+	background: #555555BA;	
+	z-index: 2;		
+}
+#menubox{
+	display: flex;
+	align-items: center;
+	height: 75px;			
+}
+#logobox{  /*logo圖片&超連結*/
+	display: flex;
+	align-items: center; /*垂直置中*/
+	align-content: center; /*水平置中*/
+	width: 170px;
+	height: 75px;
+	background: transparent; /*背景透明*/
+}		
+#hbox{  /*header區塊置中*/
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	width: 80%;
+	height: 75px;
+}
+#menubox ul{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	list-style-type:none; /*li才不會有點點*/
+}
+#menubox li a{
+	color: white;
+	text-decoration: none; /*超連結的底線不要顯示出來*/
+	font-size: 14px;
+	padding: 10px;
+	font-weight: bold;
+}
+#menubox li a:hover{ /*hover鼠標滑入 設超連結一定要記得用這個*/
+	color: #d9b311; /*游標滑過之後字會變色*/
+	transition: 0.5s; /*漸變效果*/
+}
+
+.mainimg{
+	height: 100vh;
+	width: 100%;
+	background: url('./../img/backimg.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment:fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.mainword{
+	position: relative;
+	text-align: center;
+	color:#FFF ;
+}
+.maskBlack{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .5;
+}
+.mainword h1{
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+main{
+	display: flex;
+	width: 100%;
+	height: 1069px;
+}
+article{
+	width: 70%;
+	height: 100%;
+}
+aside{
+	width: 30%;
+	height: 100%;
+}
+
+#mainBox{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+#userDataBg{
+	width: 90%;
+	height: 90%;
+	background: #f1f1f1;
+	margin: 0 auto;
+}
+#userDataBg h2{
+	font-size: 17px;
+	text-align: center;
+	padding: 20px;
+}
+#userData{
+	background: #fff;
+	height: 85%;
+	width: 80%;
+	margin: 0 auto;
+	box-shadow: 5px 10px 10px #BEBEBE;
+	padding:20px;
+}
+input{
+	padding: 10px 15px;
+	background: #F9F9FA;
+	border: 1px solid #ddd;
+}
+select{
+	padding: 10px 15px;
+	background: #F9F9FA;
+	border: 1px solid #ddd;	
+}
+textarea{
+	padding: 10px 15px;
+	background: #F9F9FA;
+	border: 1px solid #ddd;
+}
+.inputRow{
+	display: flex;
+	margin-bottom: 10px;
+}
+.inputColumn{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	margin:0px 10px;
+}
+.inputColumn label{
+	margin-bottom: 5px;
+}
+#btn{	
+	width: 30px;
+	display: block;	/*看到a先設這個讓他變成區塊元素*/
+	background: #D9B311;
+	color:#fff;
+	padding: 12px 50px;
+	text-decoration: none;
+	font-size: 15px;
+	border-radius: 5px; /*圓角*/
+	margin-left: 10px;
+}
+
+
+#searchBox{
+	padding: 12px 16px;
+}
+#postsNews{
+	margin: 20px 20px 20px 0px;
+	border-left: 4px solid #d9b311;
+	padding-left: 5px;
+}
+
+#postMenu ul{
+	list-style: none;
+}
+#postMenu li{
+	font-size: 13px;
+	padding: 10px 0;
+	margin:10px 0;
+	border-bottom: 1px solid #ddd;
+}
+#searchBox input{
+	padding: 10px 15px;
+	background: #F9F9FA;
+	border: 1px solid #ddd;
+}
+
+
+#footer{
+	width: 100%;
+}
+#aboutUs{
+	width: 60%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin: 0 auto;
+} 
+#aboutUs p{
+	color:#54595F;
+}
+.footerLine2{
+	width: 75%;
+	height: 1px;
+	background-color: #929292;
+	margin: 20px auto; /*順序上右下左 只寫兩個第一個上下第二個左右*/			
+}
+.footerH2{
+	padding-bottom: 10px;
+}
+#declare{
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}

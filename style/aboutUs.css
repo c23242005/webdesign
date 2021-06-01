@@ -1,0 +1,144 @@
+*{  /*把所有元素 margin padding 都先變成0 之後就不用再寫了*/
+	margin: 0;
+	padding: 0; 
+	font-family: "微軟正黑體";
+}
+header{
+	position: fixed; /*選單定在上面*/
+	height: 75px;
+	width: 100%;
+	background: #555555BA;	
+	z-index: 2;		
+}
+#menubox{
+	display: flex;
+	align-items: center;
+	height: 75px;			
+}
+#logobox{  /*logo圖片&超連結*/
+	display: flex;
+	align-items: center; /*垂直置中*/
+	align-content: center; /*水平置中*/
+	width: 170px;
+	height: 75px;
+	background: transparent; /*背景透明*/
+}		
+#hbox{  /*header區塊置中*/
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	width: 80%;
+	height: 75px;
+}
+#menubox ul{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	list-style-type:none; /*li才不會有點點*/
+}
+#menubox li a{
+	color: white;
+	text-decoration: none; /*超連結的底線不要顯示出來*/
+	font-size: 14px;
+	padding: 10px;
+	font-weight: bold;
+}
+#menubox li a:hover{ /*hover鼠標滑入 設超連結一定要記得用這個*/
+	color: #d9b311; /*游標滑過之後字會變色*/
+	transition: 0.5s; /*漸變效果*/
+}
+
+.mainimg{
+	height: 100vh;
+	width: 100%;
+	background: url('./../img/backimg.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment:fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.mainword{
+	position: relative;
+	text-align: center;
+	color:#FFF ;
+}
+.maskBlack{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .5;
+}
+.mainword h1{
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+
+
+#about{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: url('./../img/奧蕾莉標誌設計.png') no-repeat center center;
+}
+.maskWhite{
+	position: absolute;
+	width: 80%;
+	height: 377px;
+	background-color: #fff;
+	opacity: .9;
+}
+#aboutImg{
+	z-index: 2;
+	padding: 0 20px;
+}
+#aboutImg img{
+	width: 373px;
+	height: 373px;
+}
+#aboutWord{
+	z-index: 2;
+	height: 80%;
+	padding: 0 20px;
+}
+.aboutP{
+	margin-bottom: 20px;
+}
+#aboutWord>p{
+	color:#54595E;
+	font-size: 16px;
+}
+
+#footer{
+	width: 100%;
+}
+#aboutUs{
+	width: 60%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin: 0 auto;
+} 
+#aboutUs p{
+	color:#54595F;
+}
+.footerLine2{
+	width: 75%;
+	height: 1px;
+	background-color: #929292;
+	margin: 20px auto; /*順序上右下左 只寫兩個第一個上下第二個左右*/			
+}
+.footerH2{
+	padding-bottom: 10px;
+}
+#declare{
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}

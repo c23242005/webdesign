@@ -1,0 +1,92 @@
+*{  /*把所有元素 margin padding 都先變成0 之後就不用再寫了*/
+	margin: 0;
+	padding: 0; 
+	font-family: "微軟正黑體";
+}
+header{
+	position: fixed; /*選單定在上面*/
+	height: 75px;
+	width: 100%;
+	background: #555555BA;	
+	z-index: 2;		
+}
+#menubox{
+	display: flex;
+	align-items: center;
+	height: 75px;			
+}
+#logobox{  /*logo圖片&超連結*/
+	display: flex;
+	/*	float:left;*/
+	align-items: center; /*垂直置中*/
+	align-content: center; /*水平置中*/
+	width: 170px;
+	height: 75px;
+	background: transparent; /*背景透明*/
+}		
+#hbox{  /*header區塊置中*/
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	width: 80%;
+	height: 75px;
+}
+#menubox ul{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	list-style-type:none; /*li才不會有點點*/	
+}
+#menubox li a{
+	color: white;
+	text-decoration: none; /*超連結的底線不要顯示出來*/
+	font-size: 14px;
+	padding: 10px;
+	font-weight: bold;
+}
+#menubox li a:hover{ /*hover鼠標滑入 設超連結一定要記得用這個*/
+	color: #d9b311; /*游標滑過之後字會變色*/
+	transition: 0.5s; /*漸變效果*/
+}
+
+.mainimg{
+	height: 100vh;
+	width: 100%;
+	background: url('./../img/backimg.jpg') no-repeat center center;
+	background-size: cover; /*滿版效果*/
+	background-attachment:fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .5;
+}
+#vipBtn{
+	margin: 0 auto;
+	width: 80%;
+	display: block;	/*看到a先設這個讓他變成區塊元素*/
+	background: #D9B311;
+	color:#fff;
+	padding: 12px 50px;
+	text-decoration: none;
+	margin-top: 30px;
+	text-align: center;
+	box-shadow: 5px 5px 10px #666; /*陰影 第三個元素是陰影*/
+	
+}
+#map{
+	width: 80%;
+	z-index: 2;
+	padding-top: 20px;
+}
+#mapBox iframe{
+	width:100%;
+	height:450px;
+	border:0;
+}

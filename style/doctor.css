@@ -1,0 +1,133 @@
+*{  /*把所有元素 margin padding 都先變成0 之後就不用再寫了*/
+	margin: 0;
+	padding: 0; 
+	font-family: "微軟正黑體";
+}
+header{
+	height: 75px;
+	width: 100%;
+	background: #555555BA;		
+}
+#menubox{
+	display: flex;
+	align-items: center;
+	height: 75px;			
+}
+#logobox{  /*logo圖片&超連結*/
+	display: flex;
+	align-items: center; /*垂直置中*/
+	align-content: center; /*水平置中*/
+	width: 170px;
+	height: 75px;
+	background: transparent; /*背景透明*/
+}		
+#hbox{  /*header區塊置中*/
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	width: 80%;
+	height: 75px;
+}
+#menubox ul{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	list-style-type:none; /*li才不會有點點*/
+}
+#menubox li a{
+	color: white;
+	text-decoration: none; /*超連結的底線不要顯示出來*/
+	font-size: 14px;
+	padding: 10px;
+	font-weight: bold;
+}
+#menubox li a:hover{ /*hover鼠標滑入 設超連結一定要記得用這個*/
+	color: #d9b311; /*游標滑過之後字會變色*/
+	transition: 0.5s; /*漸變效果*/
+}
+
+#mainimg img{
+	width: 100%;
+	background: url('./../img/醫師團隊主視覺.jpg') ;
+	background-size: cover;
+	display: flex;
+}
+
+#doctors{
+	background: #D8B22C;
+	width: 100%;
+	padding-top: 50px;
+}
+#doctorImgBox{
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+#doctor1 img{
+	width: 38%;
+}
+#doctor2 img{
+	width: 100%;
+}
+#doctorNameBox{
+	width: 88%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding: 20px;
+}
+.doctorName{
+	color:#fff;
+	font-size: 20px;
+}
+.doctorName a{
+	color: white;
+	text-decoration: none; /*超連結的底線不要顯示出來*/
+	font-size: 20px;
+}
+
+
+#footer{
+	width: 100%;
+}
+.footerLine{
+	width: 150px;
+	height: 3px;
+	background-color: #d9b311;
+	margin: 20px auto; /*順序上右下左 只寫兩個第一個上下第二個左右*/			
+}
+#contact{
+	padding-top: 40px;
+	text-align: center;
+}
+#contact h2{
+	font-size: 34px;
+	color:#333333;
+}
+#aboutUs{
+	width: 60%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin: 0 auto;
+} 
+#aboutUs p{
+	color:#54595F;
+}
+.footerLine2{
+	width: 75%;
+	height: 1px;
+	background-color: #929292;
+	margin: 20px auto; /*順序上右下左 只寫兩個第一個上下第二個左右*/			
+}
+.footerH2{
+	padding-bottom: 10px;
+}
+#declare{
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
